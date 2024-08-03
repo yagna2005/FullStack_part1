@@ -1,0 +1,184 @@
+/* Login Page Container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ffffff; /* Soft background color */
+  padding: 2rem;
+}
+
+/* Login Form Styles */
+.login-form {
+  background-color: #ffffff; /* White background */
+  padding: 2rem;
+  border-radius: 10px; /* Smooth rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 400px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #e0e0e0; /* Light gray border */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.login-form h2 {
+  font-size: 1.75rem;
+  color: #333; /* Dark text color */
+  margin-bottom: 1.5rem;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners */
+}
+
+
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555; /* Darker label color */
+}
+
+.form-group input {
+  width: calc(100% - 20px); /* Adjust width for padding */
+  padding: 0.75rem;
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff; /* Highlight border color */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Highlight shadow */
+  background-color: #ffffff; /* White background on focus */
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-button {
+  background-color: #007bff; /* Primary button color */
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Alternative Login Buttons */
+.alternative-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.google-login,
+.apple-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.google-login {
+  background-color: #db4437; /* Google red */
+  color: #ffffff;
+}
+
+.google-login:hover {
+  background-color: #c1351d; /* Darker red on hover */
+  transform: translateY(-2px);
+}
+
+.google-login img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.apple-login {
+  background-color: #000000; /* Apple black */
+  color: #ffffff;
+}
+
+.apple-login:hover {
+  background-color: #333333; /* Darker black on hover */
+  transform: translateY(-2px);
+}
+
+.apple-login img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+/* Footer */
+.form-footer {
+  margin-top: 1.5rem;
+}
+
+.signup-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+  transform: translateY(-1px);
+}
+
+.footer {
+  margin-top: 0rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666; /* Gray text */
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+  transform: translateY(-1px);
+}

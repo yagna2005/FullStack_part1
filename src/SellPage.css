@@ -1,0 +1,128 @@
+/* General Styles */
+.sell-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f5f7fa, #e9eff1);
+  padding: 20px;
+}
+
+.sell-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.sell-container h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.sell-container h1:hover {
+  color: #3498db;
+}
+
+/* Form Styles */
+.sell-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sell-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #333;
+}
+
+.sell-form input[type="text"],
+.sell-form input[type="file"],
+.sell-form textarea,
+.sell-form select {
+  padding: 10px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sell-form input[type="text"]:focus,
+.sell-form textarea:focus,
+.sell-form select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+.sell-form input[type="file"] {
+  background-color: #f7f9fc;
+  cursor: pointer;
+}
+
+.sell-form input[type="file"]::file-selector-button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sell-form input[type="file"]::file-selector-button:hover {
+  background-color: #2980b9;
+}
+
+.sell-form button {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sell-form button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Message Styles */
+.message {
+  color: #e74c3c;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sell-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .sell-form {
+    gap: 10px;
+  }
+
+  .sell-form label {
+    font-size: 0.9rem;
+  }
+
+  .sell-form input[type="text"],
+  .sell-form textarea,
+  .sell-form select {
+    font-size: 0.9rem;
+  }
+}

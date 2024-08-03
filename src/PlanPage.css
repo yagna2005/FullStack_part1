@@ -1,0 +1,193 @@
+/* General Container Styles */
+.plan-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.plan-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Navbar and Footer Styling */
+.Navbar, .Footer {
+  margin-bottom: 20px; /* Ensure spacing between Navbar/Footer and content */
+}
+
+/* Search and Filter Styles */
+.search-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Plan List and Card Styles */
+.plan-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns in a row */
+  gap: 20px; /* Space between cards */
+}
+
+.plan-card {
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.plan-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.plan-card h3 {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.plan-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Hover Effects */
+.plan-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+.plan-card:hover img {
+  transform: scale(1.15);
+}
+
+.plan-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.plan-card:hover::before {
+  opacity: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.plan-card:hover .card-content {
+  color: #007bff; /* Change text color on hover */
+}
+
+.card-content h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Plan Details Styles */
+.plan-details {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.plan-details img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.plan-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff; /* Change title color */
+}
+
+.plan-details p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.plan-details button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.plan-details button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .plans {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .plans {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .plans {
+    grid-template-columns: 1fr; /* One column on extra small screens */
+  }
+}

@@ -1,0 +1,281 @@
+/* General Styles */
+.admin-page-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar:hover {
+  width: 270px;
+  background-color: #1a252f;
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ecf0f1;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Plan Form Styles */
+.add-plan-form {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.add-plan-form h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.add-plan-form select,
+.add-plan-form input[type="text"],
+.add-plan-form input[type="file"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-plan-form select:focus,
+.add-plan-form input[type="text"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+.add-plan-form input[type="file"] {
+  padding: 5px;
+  background-color: #f7f9fc;
+}
+
+.add-plan-form input[type="file"]::file-selector-button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-plan-form input[type="file"]::file-selector-button:hover {
+  background-color: #2980b9;
+}
+
+.add-plan-form button {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-plan-form button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Plan List Styles */
+.plan-list {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.plan-list h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.plan-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plan-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.plan-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.plan-images img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.plan-images img:hover {
+  transform: scale(1.1);
+}
+
+.plan-item button {
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-item button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Edit Plan Form Styles */
+.edit-plan-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.edit-plan-form h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.edit-plan-form select,
+.edit-plan-form input[type="text"],
+.edit-plan-form input[type="file"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-plan-form select:focus,
+.edit-plan-form input[type="text"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+.edit-plan-form input[type="file"] {
+  padding: 5px;
+  background-color: #f7f9fc;
+}
+
+.edit-plan-form input[type="file"]::file-selector-button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-plan-form input[type="file"]::file-selector-button:hover {
+  background-color: #2980b9;
+}
+
+.edit-plan-form button {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-plan-form button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.edit-plan-form .cancel-button {
+  background-color: #e74c3c;
+  margin-left: 10px;
+}
+
+.edit-plan-form .cancel-button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #34495e;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .add-plan-form,
+  .plan-list,
+  .edit-plan-form {
+    padding: 15px;
+  }
+}
